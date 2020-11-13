@@ -9,15 +9,14 @@ const passport = require('passport');
 
 const pageRouter = require('./routes/page');
 const authRouter = require('./routes/auth');
-const postRouter = require('./routes/post');
-const userRouter = require('./routes/user');
+const postRouter = require('./routes/post'); 
+const userRouter = require('./routes/user'); //
 
 const { sequelize } = require('./models');     //?
 const passportConfig = require('./passport');  //?
 
 dotenv.config();  // env 파일을 환경변수로 설정 
 passportConfig();  // ?? 
-
 
 const app = express();
 

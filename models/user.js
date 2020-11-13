@@ -56,7 +56,6 @@ module.exports = class User extends Sequelize.Model {   // 모듈로 설정중�
     });
   }
 
-  
   // 아래부터는 테이블간의 관련정보를 말하는 것 같다. 
   // 데이터베이스는 여러개의 테이블(모델)로 이루어져 있는데 지금 현재 문서는 user table이다. 
   // 아래 문서는 다른 테이블간의 연관에 필요한 정보를 적은다. 
