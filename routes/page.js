@@ -74,7 +74,7 @@ router.get('/hashtag', async (req, res, next) => {
     }
 
     return res.render('main', {  // main 페이지를 렌더 즉 표시한다. 
-      title: `${query} | NodeBird`,  // titel은 워에서 얻은 query로 넘겨주는데, 왜 저런 형식으로 주는지는 의문
+      title: `${query} | NodeBird`,  // tite은 위에서 얻은 query로 넘겨주는데, 왜 저런 형식으로 주는지는 의문
       twits: posts, // 아마 위에서의 post와 동일한 것 같다.
     });
   } catch (error) {

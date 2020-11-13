@@ -3,6 +3,8 @@
 // 아니면 이 사람이 계정이 없어서 회원가입이 필요한 사람인지
 // 이러한 것들을 파악하고, 거기에 맞는 미들워어(라우터?)를 실행시키는 부분으로 알고있다. 
 
+// 우선 로그인 시에 필요한 미들웨어가 모여있는 곳이다. 
+
 const express = require('express');
 const passport = require('passport');
 const bcrypt = require('bcrypt');
@@ -37,7 +39,7 @@ router.post('/join', isNotLoggedIn, async (req, res, next) => {  // 중간에 is
   }
 });
 
-// 아래의 미들웨어는 다음과 같다.(로그인을 하는 미들웨어 ) 
+// 아래의 미들웨어는 다음과 같다.(로그인을 하는 미들웨어  - 로컬 로그인) 
 // 0. isNotLoggedIn 미들웨어를 실행 (middlewares.js 안에 있음)
 // 1. 
 
