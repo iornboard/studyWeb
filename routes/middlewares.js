@@ -15,6 +15,6 @@ exports.isNotLoggedIn = (req, res, next) => {
     next();
   } else {
     const message = encodeURIComponent('로그인한 상태입니다.');  // 문자열을 인코딩
-    res.redirect(`/?error=${message}`);  // 리타이렉트
+    res.redirect(`/?error=${message}`);  // 리타이렉트 + 메세지(위에꺼)
   }
 };
